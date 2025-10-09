@@ -1,10 +1,10 @@
-Here’s a compact C++ template pack for the 32 core patterns that cover ~80–90% of interview DSA questions. You can copy/paste functions as needed.
+// Here’s a compact C++ template pack for the 32 core patterns that cover ~80–90% of interview DSA questions. You can copy/paste functions as needed.
 
-Note:
-- Uses <bits/stdc++.h> for brevity; replace with specific headers if required.
-- Function names are self-contained; no main() needed.
+// Note:
+// - Uses <bits/stdc++.h> for brevity; replace with specific headers if required.
+// - Function names are self-contained; no main() needed.
 
-```cpp
+// ```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -623,6 +623,6 @@ long long binpow(long long a, long long e) {
 long long modpow(long long a, long long e, long long mod) {
     long long r=1%mod; a%=mod; while (e){ if (e&1) r=r*a%mod; a=a*a%mod; e>>=1; } return r;
 }
-```
+// ```
 
-Want this split into multiple files, or with sample problems attached to each template? I can also add a lightweight header-only “patterns.h” with all of the above and a driver scaffold.
+// Want this split into multiple files, or with sample problems attached to each template? I can also add a lightweight header-only “patterns.h” with all of the above and a driver scaffold.
